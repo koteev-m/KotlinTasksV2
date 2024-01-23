@@ -1,6 +1,7 @@
 package tasks.arithmetic
 
 fun main() {
+
     val totalStudents = 4f
     val firstStudentPoints = 3f
     val secondStudentPoints = 4f
