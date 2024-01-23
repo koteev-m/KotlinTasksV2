@@ -9,4 +9,5 @@ fun main() {
 
     val averagePoint: Float = (firstStudentPoints + secondStudentPoints + thirdStudentPoints + fourthStudentPoints) / totalStudents
     println(averagePoint)
+
 }
