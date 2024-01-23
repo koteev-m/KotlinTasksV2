@@ -1,9 +1,16 @@
 package tasks
 
+import kotlin.concurrent.timer
+
 fun main() {
-    val totalSeconds = 6480
-    val hours = totalSeconds / 3600
-    val minutes = (totalSeconds % 3600) / 60
-    val seconds = totalSeconds % 60
-    println("0$hours:$minutes:0$seconds")
+    val totalSecondsInSpace = 6480
+
+    val secondsInMinute = 60
+    val secondsInHour = 3600
+
+    val hours = totalSecondsInSpace / secondsInHour
+    val minutes = (totalSecondsInSpace % secondsInHour) / secondsInMinute
+    val seconds = totalSecondsInSpace % secondsInMinute
+
+    println("$hours:$minutes:$seconds".format(hours, minutes, seconds))
 }
