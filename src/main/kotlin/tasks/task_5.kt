@@ -12,5 +12,6 @@ fun main() {
     val minutes = (totalSecondsInSpace % secondsInHour) / secondsInMinute
     val seconds = totalSecondsInSpace % secondsInMinute
 
-    println("$hours:$minutes:$seconds".format(hours, minutes, seconds))
+
+    println("%02d:%02d:%02d".format(hours, minutes, seconds))
 }
