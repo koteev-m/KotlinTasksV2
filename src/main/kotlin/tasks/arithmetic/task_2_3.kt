@@ -12,4 +12,5 @@ fun main() {
 
     println("Поезд прибудет в $arrivalHour:$arrivalMinute")
 
+
 }
