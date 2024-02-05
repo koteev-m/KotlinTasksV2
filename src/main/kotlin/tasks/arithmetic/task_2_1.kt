@@ -1,7 +1,8 @@
 package tasks.arithmetic
 
 fun main() {
-    val totalStudents = 4f
+
+    val totalStudents = 4
     val firstStudentPoints = 3f
     val secondStudentPoints = 4f
     val thirdStudentPoints = 3f
@@ -9,4 +10,5 @@ fun main() {
 
     val averagePoint: Float = (firstStudentPoints + secondStudentPoints + thirdStudentPoints + fourthStudentPoints) / totalStudents
     println(averagePoint)
+
 }
