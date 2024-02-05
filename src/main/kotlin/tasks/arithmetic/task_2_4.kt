@@ -1,16 +1,17 @@
 package tasks.arithmetic
 
 fun main() {
-    var crystalOre = 7
-    var ironOre = 11
+    val crystalOre = 7
+    val ironOre = 11
     val buffPercentage = 20
     val totalPercent = 100
 
-    val bonusCrystalOre = crystalOre * buffPercentage / totalPercent
-    val bonusIronOre = ironOre * buffPercentage / totalPercent
+    val buffRatio = buffPercentage / totalPercent
+    val bonusCrystalOre = crystalOre * buffRatio
+    val bonusIronOre = ironOre * buffRatio
 
     println("""
-        Бонусная кристаллическая руда: $bonusCrystalOre
-        Бонусная металлическая руда: $bonusIronOre
-    """.trimIndent())
+    Бонусная кристаллическая руда: $bonusCrystalOre
+    Бонусная металлическая руда: $bonusIronOre
+""".trimIndent())
 }
