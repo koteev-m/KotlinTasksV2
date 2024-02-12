@@ -1,11 +1,13 @@
 package tasks.strings
 
 fun main() {
-    var fullName = "Андреева Татьяна Сергеевна"
+    val firstName = "Татьяна"
+    val lastName = "Андреева"
+    val middleName = "Сергеевна"
     var age = 20
-    println("$fullName, $age")
+    println("$lastName $firstName $middleName, $age")
 
-    fullName = "Сидорова Татьяна Сергеевна"
+    val newLastName = "Сидорова"
     age = 22
-    println("$fullName, $age")
+    println("$newLastName $firstName $middleName, $age")
 }
