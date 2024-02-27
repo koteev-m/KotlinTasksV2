@@ -1,15 +1,13 @@
 package tasks.operators
 
 fun main() {
-    val trainingDay = 5
-
-    val exercisesForArmsAndAbs = trainingDay % 2 == 1
-    val exercisesForLegsAndBack = trainingDay % 2 == 0
+    val trainingDay = 4
+    val isEven = trainingDay % 2 == 0
 
     println("""
-        Упражнения для рук:    $exercisesForArmsAndAbs
-        Упражнения для ног:    $exercisesForLegsAndBack
-        Упражнения для спины:  $exercisesForLegsAndBack
-        Упражнения для пресса: $exercisesForArmsAndAbs
-    """.trimIndent())
+    Упражнения для рук:    ${!isEven}
+    Упражнения для пресса: ${!isEven}
+    Упражнения для ног:    $isEven
+    Упражнения для спины:  $isEven
+""".trimIndent())
 }
