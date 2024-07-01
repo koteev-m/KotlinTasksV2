@@ -19,7 +19,6 @@ fun main() {
         (boxesOfProvision >= MIN_PROVISION_BOXES)){
         println("Корабль может отправиться в плавание.")
     } else println("Корабль не может отправиться в плавание.")
-
 }
 
 const val SUNNY_WTHR = true
